@@ -8,8 +8,7 @@
     border: 1px solid #e5e5e5;
     border-radius: 5px 5px 0 0;
     line-height: 28px;
-    padding-left: 3px;
-    padding-right: 3px
+    padding: 6px 12px
 }
 
 .table-list-header a {
@@ -35,8 +34,7 @@
 }
 
 .table-list-row {
-    padding-left: 3px;
-    padding-right: 3px;
+    padding: 6px 12px;
     border-bottom: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5
 }

@@ -11,6 +11,21 @@
     overflow-x: auto
 }
 
+@media (max-width: 480px) {
+    #board-container {
+        scroll-snap-type: x mandatory;
+        position: relative
+    }
+    
+    #board th.board-column-header {
+        width: calc(100vw - 42px) !important;
+        box-sizing: border-box;
+        scroll-margin: 1em;
+        scroll-snap-align: center;
+        scroll-snap-stop: normal
+    }
+}
+    
 #board {
     table-layout: fixed;
     margin-bottom: 0
@@ -110,6 +125,13 @@ a.board-swimlane-toggle:focus {
     color: #000;
     text-decoration: none;
     border: none
+}
+
+@media (max-width: 480px) {
+    .board-swimlane td {
+        padding-left: 1em;
+        padding-right: 1em
+    }
 }
 
 .board-task-list {

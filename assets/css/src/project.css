@@ -58,7 +58,13 @@
 }
 
 .project-header {
-    margin-bottom: 8px
+    margin: 10px auto
+}
+
+@media (max-width: 560px) {
+    .project-header {
+        overflow-x: hidden
+    }
 }
 
 .project-header .dropdown-component {
@@ -76,6 +82,13 @@
 .project-header .views-switcher-component {
     margin-top: 4px;
     float: left
+}
+
+@media (max-width: 560px) {
+    .project-header .views-switcher-component {
+        margin-left: -1em;
+        margin-right: -1em;
+    }
 }
 
 @media (max-width: 768px) {

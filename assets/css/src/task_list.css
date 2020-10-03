@@ -27,6 +27,12 @@
     }
 }
 
+@media (max-width: 480px) {
+    #task-list {
+        margin: 0 -10px;
+    }
+}
+
 .subtask-time-tracking {
     white-space: normal
 }

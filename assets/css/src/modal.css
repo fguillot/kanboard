@@ -31,6 +31,9 @@
 
 #modal-close-button {
     color: var(--color-primary);
+    position: absolute;
+    top: 16px;
+    right: 16px
 }
 
 #modal-close-button:hover {

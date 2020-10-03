@@ -14,7 +14,11 @@ header .title-container {
 
 @media (max-width: 480px) {
     header .title-container {
-        order: 3
+        order: 0;
+        margin-bottom: 5px;
+        width: auto;
+        min-width: auto;
+        left: 0;
     }
 }
 
@@ -27,10 +31,15 @@ header .board-selector-container {
 @media (max-width: 480px) {
     header .board-selector-container {
         order: 2;
+        width: 100%;
         min-width: 300px
     }
     header .board-selector-container input[type=text] {
         max-width: 280px
+    }
+
+    header .board-selector-container .js-select-dropdown-autocomplete-rendered {
+        width: 100%;
     }
 }
 
