@@ -70,9 +70,9 @@
     <?php if (! empty($changes['description'])): ?>
         <p><strong><?= t('The description has been modified:') ?></strong></p>
         <?php if (isset($public)): ?>
-            <div class="markdown"><?= $this->text->markdown($task['description'], true) ?></div>
+            <div class="markdown" dir="auto"><?= $this->text->markdown($task['description'], true) ?></div>
         <?php else: ?>
-            <div class="markdown"><?= $this->text->markdown($task['description']) ?></div>
+            <div class="markdown" dir="auto"><?= $this->text->markdown($task['description']) ?></div>
         <?php endif ?>
     <?php endif ?>
 <?php endif ?>

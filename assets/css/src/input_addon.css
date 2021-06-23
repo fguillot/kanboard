@@ -12,11 +12,13 @@
 }
 
 .input-addon-field:first-child {
-    border-radius: 5px 0 0 5px
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
 }
 
 .input-addon-field:last-child {
-    border-radius: 0 5px 5px 0
+    border-start-end-radius: 5px;
+    border-end-end-radius: 5px;
 }
 
 .input-addon-item {
@@ -27,11 +29,13 @@
 }
 
 .input-addon-item:first-child {
-    border-radius: 5px 0 0 5px
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
 }
 
 .input-addon-item:last-child {
-    border-radius: 0 5px 5px 0
+    border-start-end-radius: 5px;
+    border-end-end-radius: 5px;
 }
 
 @media (max-width: 480px) {
@@ -48,7 +52,7 @@
 
 .input-addon-field:not(:first-child),
 .input-addon-item:not(:first-child) {
-    border-left: 0
+    border-inline-start: 0
 }
 
 .project-header .filter-box-component .input-addon {

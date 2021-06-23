@@ -1,8 +1,8 @@
 .list-item-links,
 .list-item-actions {
     display: inline-block;
-    float: left;
-    margin-left: 10px
+    float: inline-start;
+    margin-inline-start: 10px
 }
 
 .list-item-links a {

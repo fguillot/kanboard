@@ -2,6 +2,17 @@
     line-height: 1.4em
 }
 
+.markdown h1,
+.markdown h2,
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote,
+.markdown pre {
+    unicode-bidi: plaintext;
+    text-align: start;
+}
+
 .markdown h1 {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -18,9 +29,13 @@
 
 .markdown ol,
 .markdown ul {
-    margin-left: 25px;
+    margin-inline-start: 25px;
     margin-top: 10px;
     margin-bottom: 10px
+}
+
+.markdown li {
+    unicode-bidi: plaintext;
 }
 
 .markdown pre {
@@ -35,10 +50,10 @@
 
 .markdown blockquote {
     font-style: italic;
-    border-left: 3px solid #ddd;
-    padding-left: 10px;
+    border-inline-start: 3px solid #ddd;
+    padding-inline-start: 10px;
     margin-bottom: 10px;
-    margin-left: 20px
+    margin-inline-start: 20px;
 }
 
 .markdown img {

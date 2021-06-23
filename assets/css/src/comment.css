@@ -1,5 +1,5 @@
 .comment-sorting {
-    text-align: right
+    text-align: end
 }
 
 .comment-sorting a {
@@ -19,7 +19,7 @@
 
 .comment-title {
     border-bottom: 1px dotted #eee;
-    margin-left: 55px
+    margin-inline-start: 55px
 }
 
 .comment-date {
@@ -28,11 +28,11 @@
 }
 
 .comment-actions {
-    text-align: right
+    text-align: end
 }
 
 .comment-content {
-    margin-left: 55px
+    margin-inline-start: 55px
 }
 
 .comments .text-editor textarea {

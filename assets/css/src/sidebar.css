@@ -11,7 +11,7 @@
 }
 
 .sidebar-content {
-    padding-left: 10px;
+    padding-inline-start: 10px;
     flex: 1 100%;
     max-width: 85%;
     overflow-wrap: break-word
@@ -19,7 +19,7 @@
 
 @media (max-width: 768px) {
     .sidebar-content {
-        padding-left: 0;
+        padding-inline-start: 0;
         order: 1;
         max-width: 100%
     }
@@ -61,17 +61,17 @@
     list-style-type: none;
     line-height: 35px;
     border-bottom: 1px dotted #efefef;
-    padding-left: 13px
+    padding-inline-start: 13px
 }
 
 .sidebar>ul li:hover {
-    border-left: 5px solid #555;
-    padding-left: 8px
+    border-inline-start: 5px solid #555;
+    padding-inline-start: 8px
 }
 
 .sidebar>ul li.active {
-    border-left: 5px solid #333;
-    padding-left: 8px
+    border-inline-start: 5px solid #333;
+    padding-inline-start: 8px
 }
 
 .sidebar>ul li.active a {
@@ -80,13 +80,13 @@
 }
 
 .sidebar-icons>ul li {
-    padding-left: 0
+    padding-inline-start: 0
 }
 
 .sidebar-icons>ul li:hover,
 .sidebar-icons>ul li.active {
-    padding-left: 0;
-    border-left: none
+    padding-inline-start: 0;
+    border-inline-start: none
 }
 
 .sidebar>ul li.active a:focus,

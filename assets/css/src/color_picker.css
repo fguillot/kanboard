@@ -10,7 +10,7 @@
     display: inline-block;
     width: 18px;
     height: 18px;
-    margin-right: 5px;
+    margin-inline-end: 5px;
     border: 1px solid #000
 }
 

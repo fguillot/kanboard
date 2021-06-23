@@ -4,15 +4,15 @@
 }
 
 .pagination-showing {
-    margin-right: 5px;
-    padding-right: 5px;
-    border-right: 1px solid #999
+    margin-inline-end: 5px;
+    padding-inline-end: 5px;
+    border-inline-end: 1px solid #999
 }
 
 .pagination-next {
-    margin-left: 5px
+    margin-inline-start: 5px
 }
 
 .pagination-previous {
-    margin-right: 5px
+    margin-inline-end: 5px
 }

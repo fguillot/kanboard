@@ -3,6 +3,7 @@ h2,
 h3 {
     font-weight: normal;
     color: var(--color-primary);
+    unicode-bidi: plaintext;
 }
 
 h1 {

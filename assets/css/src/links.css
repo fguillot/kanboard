@@ -16,6 +16,6 @@ a:hover {
 
 a .fa {
     color: var(--color-primary);
-    padding-right: 3px;
+    padding-inline-end: 3px;
     text-decoration: none;
 }

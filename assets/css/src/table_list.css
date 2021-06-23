@@ -1,6 +1,6 @@
 .table-list {
     font-size: 0.85em;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .table-list-header {
@@ -8,150 +8,151 @@
     border: 1px solid #e5e5e5;
     border-radius: 5px 5px 0 0;
     line-height: 28px;
-    padding-left: 3px;
-    padding-right: 3px
+    padding-inline-start: 3px;
+    padding-inline-end: 3px;
 }
 
 .table-list-header a {
     color: #333;
     font-weight: 500;
     text-decoration: none;
-    margin-right: 10px
+    margin-inline-end: 10px;
 }
 
 .table-list-header a:hover,
 .table-list-header a:focus {
-    color: #767676
+    color: #767676;
 }
 
 .table-list-header .table-list-header-count {
     color: #767676;
     display: inline-block;
-    float: left;
+    float: inline-start;
 }
 
 .table-list-header .table-list-header-menu {
-    text-align: right
+    text-align: right;
 }
 
 .table-list-row {
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-inline-start: 3px;
+    padding-inline-end: 3px;
     border-bottom: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5
+    border-inline-end: 1px solid #e5e5e5;
 }
 
 .table-list-row.table-border-left {
-    border-left: 1px solid #e5e5e5
+    border-inline-start: 1px solid #e5e5e5;
 }
 
 .table-list-row:nth-child(odd) {
-    background: #fefefe
+    background: #fefefe;
 }
 
 .table-list-row:last-child {
-    border-radius: 0 0 5px 5px
+    border-radius: 0 0 5px 5px;
 }
 
 .table-list-row:hover {
     background: #fff8dc;
     border-bottom: 1px solid #ffeb8e;
-    border-right: 1px solid #ffeb8e
+    border-right: 1px solid #ffeb8e;
 }
 
 .table-list-row .table-list-title {
     font-weight: 500;
-    line-height: 23px
+    line-height: 23px;
 }
 
 .table-list-row .table-list-title.status-closed {
     text-decoration: line-through;
-    margin-right: 10px
+    margin-inline-end: 10px;
 }
 
 .table-list-row .table-list-title.status-closed a {
-    font-style: italic
+    font-style: italic;
 }
 
 .table-list-row .table-list-title a {
     color: #333;
-    text-decoration: none
+    text-decoration: none;
+    unicode-bidi: plaintext;
 }
 
 .table-list-row .table-list-title a:hover,
 .table-list-row .table-list-title a:focus {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .table-list-row .table-list-details {
     color: #999;
     font-weight: 300;
-    line-height: 20px
+    line-height: 20px;
 }
 
 .table-list-row .table-list-details span {
-    margin-left: 5px
+    margin-inline-start: 5px;
 }
 
 .table-list-row .table-list-details span:first-child {
-    margin-left: 0
+    margin-inline-start: 0;
 }
 
 .table-list-row .table-list-details li {
     display: inline;
-    list-style-type: none
+    list-style-type: none;
 }
 
 .table-list-row .table-list-details li:after {
-    content: ', '
+    content: ", ";
 }
 
 .table-list-row .table-list-details li:last-child:after {
-    content: ''
+    content: "";
 }
 
 .table-list-row .table-list-details strong {
     font-weight: 400;
-    color: #555
+    color: #555;
 }
 
 .table-list-row .table-list-details-with-icons {
-    float: left
+    float: inline-start;
 }
 
 @media (max-width: 768px) {
     .table-list-row .table-list-details-with-icons {
-        float: none
+        float: none;
     }
 }
 
 .table-list-row .table-list-icons {
     font-size: 0.8em;
-    text-align: right;
-    line-height: 30px
+    text-align: end;
+    line-height: 30px;
 }
 
 @media (max-width: 768px) {
     .table-list-row .table-list-icons {
-        text-align: left;
-        line-height: 20px
+        text-align: start;
+        line-height: 20px;
     }
 }
 
 .table-list-row .table-list-icons span {
-    margin-left: 5px
+    margin-inline-start: 5px;
 }
 
 .table-list-row .table-list-icons a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .table-list-row .table-list-icons a:hover {
-    color: #333
+    color: #333;
 }
 
 .table-list-row .table-list-icons a:hover i {
-    color: #333
+    color: #333;
 }
 
 .table-list-category {
@@ -161,14 +162,14 @@
     padding: 1px 2px 1px 2px;
     border-radius: 3px;
     background: #fcfcfc;
-    border: 1px solid #ccc
+    border: 1px solid #ccc;
 }
 
 .table-list-category a {
     text-decoration: none;
-    color: #000
+    color: #000;
 }
 
 .table-list-category a:hover {
-    color: #36c
+    color: #36c;
 }

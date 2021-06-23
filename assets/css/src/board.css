@@ -90,7 +90,7 @@ td.board-column-task-collapsed {
 }
 
 .board-add-icon {
-    float: left;
+    float: start;
     padding: 0 5px
 }
 

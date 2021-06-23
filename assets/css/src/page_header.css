@@ -26,7 +26,7 @@
 }
 
 .page-header ul {
-    text-align: left;
+    text-align: start;
     margin-top: 5px;
     display: inline-block
 }

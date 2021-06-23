@@ -1,6 +1,6 @@
 .task-board-sort-handle {
-    float: left;
-    padding-right: 5px
+    float: start;
+    padding-inline-end: 5px;
 }
 
 .task-board {
@@ -10,40 +10,45 @@
     padding: 2px;
     word-wrap: break-word;
     font-size: 0.9em;
-    border-radius: 6px
+    border-radius: 6px;
 }
 
 div.task-board-recent {
-    border-width: 2px
+    border-width: 2px;
 }
 
 div.task-board-status-closed {
     user-select: none;
-    border: 1px dotted #555
+    border: 1px dotted #555;
 }
 
 .task-board a {
     color: #000;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .task-board-collapsed {
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
 }
 
 .task-board-title {
     margin-top: 5px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+}
+
+.task-board-title a {
+    display: block;
+    unicode-bidi: plaintext;
 }
 
 .task-board-title a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .task-board-saving-state {
-    opacity: 0.3
+    opacity: 0.3;
 }
 
 .task-board-saving-icon {
@@ -51,18 +56,18 @@ div.task-board-status-closed {
     margin: auto;
     width: 100%;
     text-align: center;
-    color: #000
+    color: #000;
 }
 
 .task-board-avatars {
-    text-align: right;
-    float: right
+    text-align: end;
+    float: inline-end;
 }
 
 .task-board-change-assignee {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .task-board-change-assignee:hover {
-    opacity: 0.6
+    opacity: 0.6;
 }

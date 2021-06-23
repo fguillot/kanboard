@@ -14,7 +14,10 @@ label {
     margin-top: 10px;
     font-weight: 400
 }
-
+input {
+    unicode-bidi: plaintext;
+    text-align: start;
+}
 input[type="number"],
 input[type="date"],
 input[type="email"],
@@ -27,7 +30,7 @@ input[type="text"]:not(.input-addon-field) {
     font-size: 1em;
     height: 25px;
     padding-bottom: 0;
-    padding-left: 4px;
+    padding-inline-start: 4px;
     font-family: sans-serif;
     -webkit-appearance: none;
     -moz-appearance: none
@@ -103,7 +106,9 @@ textarea {
     max-width: 99%;
     height: 200px;
     font-family: sans-serif;
-    font-size: 1em
+    font-size: 1em;
+    unicode-bidi: plaintext;
+    text-align: start;
 }
 
 textarea::-webkit-input-placeholder {
@@ -146,7 +151,7 @@ span.select2-container {
 
 .form-required {
     color: red;
-    padding-left: 5px;
+    padding-inline-start: 5px;
     font-weight: bold
 }
 
@@ -177,7 +182,7 @@ textarea.form-error:focus {
 }
 
 ul.form-errors li {
-    margin-left: 0
+    margin-inline-start: 0
 }
 
 .form-help {
@@ -230,7 +235,7 @@ ul.form-errors li {
 }
 
 .form-columns .form-column {
-    margin-right: 25px;
+    margin-inline-end: 25px;
     flex-grow: 1
 }
 
@@ -245,12 +250,12 @@ ul.form-errors li {
 
 @media (max-width: 480px) {
     .form-login {
-        margin-left: 5px
+        margin-inline-start: 5px
     }
 }
 
 .form-login li {
-    margin-left: 25px;
+    margin-inline-start: 25px;
     line-height: 25px
 }
 

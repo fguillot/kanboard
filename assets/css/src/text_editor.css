@@ -6,7 +6,7 @@
     font-size: 1em;
     color: var(--color-light);
     text-decoration: none;
-    margin-right: 10px
+    margin-inline-end: 10px
 }
 
 .text-editor a:hover {

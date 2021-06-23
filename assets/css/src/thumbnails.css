@@ -15,13 +15,13 @@
     border-radius: 5px;
     margin-bottom: 20px;
     box-shadow: 4px 2px 10px -6px rgba(0, 0, 0, 0.55);
-    margin-right: 15px
+    margin-inline-end: 15px
 }
 
 .file-thumbnail img {
     cursor: pointer;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px
 }
 
 .file-thumbnail img:hover {
@@ -29,8 +29,8 @@
 }
 
 .file-thumbnail-content {
-    padding-left: 8px;
-    padding-right: 8px
+    padding-inline-start: 8px;
+    padding-inline-end: 8px
 }
 
 .file-thumbnail-title {

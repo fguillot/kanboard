@@ -195,4 +195,31 @@ class AppHelper extends Base
 
         return '';
     }
+
+    /**
+     * Chech if the given language is a Right-to-Left Language
+     *
+     * @access public
+     * @param  string $lang
+     * @return boolean
+     */
+    public function isRTL(String $lang = '')
+    {
+        $rtl_languages_list = [
+            'ar',
+            'arc',
+            'dv',
+            'fa',
+            'ha',
+            'he',
+            'khw',
+            'ks',
+            'ku',
+            'ps',
+            'ur',
+            'yi'
+        ];
+
+        return in_array($lang, $rtl_languages_list);
+    }
 }

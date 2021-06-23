@@ -37,11 +37,13 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
-    max-width: 300px
+    max-width: 300px;
+    padding-inline-end: 25px;
 }
 
 .select-dropdown-input-container input.select-dropdown-input {
-    margin: 0 0 0 5px;
+    margin: 0;
+    margin-inline-start: 5px;
     border: none;
     height: 23px;
     width: 270px
@@ -55,14 +57,14 @@
 .select-dropdown-input-container .select-dropdown-chevron {
     color: var(--color-medium);
     position: absolute;
-    top: 4px;
-    right: 5px;
+    inset-block-start: 4px;
+    inset-inline-end: 5px;
     cursor: pointer
 }
 
 .select-dropdown-input-container .select-loading-icon {
     color: var(--color-medium);
     position: absolute;
-    top: 4px;
-    right: 5px
+    inset-block-start: 4px;
+    inset-inline-end: 5px;
 }

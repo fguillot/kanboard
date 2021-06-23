@@ -39,7 +39,7 @@ table.table-striped tr:nth-child(odd) {
 }
 
 table th {
-    text-align: left;
+    text-align: start;
     padding: 0.5em 3px;
     border: 1px solid #eee;
     background: #fbfbfb
@@ -62,7 +62,7 @@ table td {
 }
 
 table td li {
-    margin-left: 20px
+    margin-inline-start: 20px
 }
 
 .column-1 {

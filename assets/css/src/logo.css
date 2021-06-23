@@ -1,3 +1,7 @@
+.logo {
+    unicode-bidi: isolate;
+}
+
 .logo a {
     opacity: 0.5;
     color: #d40000;

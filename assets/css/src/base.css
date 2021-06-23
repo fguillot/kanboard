@@ -13,12 +13,17 @@ body {
     padding: 0;
 }
 
+p {
+    unicode-bidi: plaintext;
+    text-align: start;
+}
+
 body {
     font-size: 100%;
     padding-bottom: 10px;
     color: var(--color-primary);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
 }
 
 small {
@@ -33,8 +38,8 @@ hr {
 }
 
 .page {
-    margin-left: 10px;
-    margin-right: 10px
+    margin-inline-start: 10px;
+    margin-inline-end: 10px
 }
 
 .margin-top {
@@ -51,7 +56,7 @@ hr {
 
 ul.no-bullet li {
     list-style-type: none;
-    margin-left: 0
+    margin-inline-start: 0
 }
 
 #app-loading-icon {

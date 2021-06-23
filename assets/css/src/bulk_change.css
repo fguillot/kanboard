@@ -1,10 +1,10 @@
 .bulk-change-checkbox {
-    float: left
+    float: start
 }
 
 .bulk-change-inputs {
-    float: left;
-    padding-left: 10px
+    float: start;
+    padding-inline-start: 10px
 }
 
 .bulk-change-inputs label {

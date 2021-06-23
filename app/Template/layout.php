@@ -50,6 +50,7 @@
           data-timezone="<?= $this->app->getTimezone() ?>"
           data-js-date-format="<?= $this->app->getJsDateFormat() ?>"
           data-js-time-format="<?= $this->app->getJsTimeFormat() ?>"
+          <?php if ($this->app->isRTL($this->app->jsLang())) {echo('dir="RTL"');} ?>
     >
 
     <?php if (isset($no_layout) && $no_layout): ?>

@@ -1,5 +1,5 @@
 .views {
-    margin-right: 10px;
+    margin-inline-end: 10px;
     margin-top: 1px;
     font-size: 0.9em
 }
@@ -27,7 +27,7 @@
     white-space: nowrap;
     background: #fafafa;
     border: 1px solid #ddd;
-    border-right: none;
+    border-inline-end: none;
     padding: 4px 8px;
     display: inline
 }
@@ -48,14 +48,14 @@
 }
 
 .views li:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px
 }
 
 .views li:last-child {
-    border-right: 1px solid #ddd;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px
+    border-inline-end: 1px solid #ddd;
+    border-start-end-radius: 5px;
+    border-end-end-radius: 5px
 }
 
 .views a {

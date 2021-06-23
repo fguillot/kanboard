@@ -12,13 +12,13 @@
 }
 
 .activity-date {
-    margin-left: 10px;
+    margin-inline-start: 10px;
     font-weight: normal;
     color: var(--color-light);
 }
 
 .activity-content {
-    margin-left: 55px
+    margin-inline-start: 55px
 }
 
 .activity-title {
@@ -44,5 +44,5 @@
 
 .activity-description ul {
     margin-top: 10px;
-    margin-left: 20px
+    margin-inline-start: 20px
 }

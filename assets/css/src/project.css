@@ -1,8 +1,8 @@
 .js-project-creation-options {
     max-width: 500px;
-    border-left: 3px dotted #efefef;
+    border-inline-start: 3px dotted #efefef;
     margin-top: 20px;
-    padding-left: 15px;
+    padding-inline-start: 15px;
     padding-bottom: 5px;
     padding-top: 5px
 }
@@ -30,7 +30,7 @@
 
 .project-overview-column {
     text-align: center;
-    margin-right: 3%;
+    margin-inline-end: 3%;
     margin-top: 5px;
     padding: 3px 15px 3px 15px;
     border: 1px dashed #ddd
@@ -38,7 +38,7 @@
 
 @media (max-width: 480px) {
     .project-overview-column {
-        text-align: left
+        text-align: start
     }
 }
 
@@ -63,8 +63,8 @@
 
 .project-header .dropdown-component {
     margin-top: 4px;
-    margin-right: 5px;
-    float: left
+    margin-inline-end: 5px;
+    float: inline-start;
 }
 
 @media (max-width: 768px) {
@@ -75,7 +75,7 @@
 
 .project-header .views-switcher-component {
     margin-top: 4px;
-    float: left
+    float: inline-start;
 }
 
 @media (max-width: 768px) {

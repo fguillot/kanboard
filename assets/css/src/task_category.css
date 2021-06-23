@@ -1,5 +1,5 @@
 .task-board-category-container {
-    text-align: right;
+    text-align: end;
     margin-top: 8px;
     margin-bottom: 8px
 }
@@ -9,7 +9,10 @@
     font-size: 0.9em;
     font-weight: 500;
     color: #000;
-    padding: 1px 3px 1px 2px;
+    padding-block-start: 1px;
+    padding-block-end: 1px;
+    padding-inline-start: 2px;
+    padding-inline-end: 3px;
     border-radius: 3px
 }
 

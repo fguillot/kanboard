@@ -6,11 +6,17 @@
     border: 1px solid #ddd;
     color: var(--color-primary);
     background-color: #fcfcfc;
-    overflow: auto
+    overflow: auto;
+    unicode-bidi: plaintext;
+    text-align: start
 }
 
 .panel li {
     list-style-type: square;
-    margin-left: 20px;
+    margin-inline-start: 20px;
     line-height: 1.35em
+}
+
+.panel a {
+    unicode-bidi: plaintext;
 }

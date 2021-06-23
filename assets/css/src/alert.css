@@ -38,7 +38,7 @@
 }
 
 .alert li {
-    margin-left: 25px
+    margin-inline-start: 25px
 }
 
 .alert-fade-out {
