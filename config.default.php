@@ -198,8 +198,14 @@ define('LDAP_GROUP_ATTRIBUTE_NAME', 'cn');
 // Enable/disable the reverse proxy authentication
 define('REVERSE_PROXY_AUTH', false);
 
+// Enable/disable fetching user attributes from headers
+define('REVERSE_PROXY_GET_FIELDS', FALSE);
+
 // Header name to use for the username
 define('REVERSE_PROXY_USER_HEADER', 'REMOTE_USER');
+
+// Header name to use for the common name  ( need REVERSE_PROXY_GET_FIELDS to True)
+define('REVERSE_PROXY_NAME_HEADER', 'REMOTE_CN');
 
 // Username of the admin, by default blank
 define('REVERSE_PROXY_DEFAULT_ADMIN', '');

@@ -140,6 +140,15 @@ class RequestTest extends Base
         $this->assertEquals('test', $request->getRemoteUser());
     }
 
+    public function testGetRemoteName()
+    {
+        $request = new Request($this->container, array(), array(), array(), array(), array());
+        $this->assertEmpty($request->getRemoteName());
+
+        $request = new Request($this->container, array(REVERSE_PROXY_NAME_HEADER => 'John Doe'), array(), array(), array(), array());
+        $this->assertEquals('John Doe', $request->getRemoteName());
+    }
+
     public function testGetRemoteEmail()
     {
         $request = new Request($this->container, array(), array(), array(), array(), array());

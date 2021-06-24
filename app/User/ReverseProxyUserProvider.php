@@ -43,11 +43,13 @@ class ReverseProxyUserProvider implements UserProviderInterface
      * @access public
      * @param  string $username
      * @param  string $email
+     * @param  string  $name
      */
-    public function __construct($username, $email, array $userProfile = array())
+    public function __construct($username, $email, $name, array $userProfile = array())
     {
         $this->username = $username;
         $this->email = $email;
+        $this->name = $name;
         $this->userProfile = $userProfile;
     }
 
@@ -133,7 +135,11 @@ class ReverseProxyUserProvider implements UserProviderInterface
      */
     public function getName()
     {
-        return '';
+        if (! REVERSE_PROXY_NAME_HEADER ){
+            return '';
+        }else{
+            return $this->name;
+        }
     }
 
     /**
@@ -144,11 +150,14 @@ class ReverseProxyUserProvider implements UserProviderInterface
      */
     public function getEmail()
     {
-        if (REVERSE_PROXY_DEFAULT_DOMAIN !== '' && $this->email === '') {
-            return $this->username.'@'.REVERSE_PROXY_DEFAULT_DOMAIN;
+        if (! REVERSE_PROXY_EMAIL_HEADER ){
+            if (REVERSE_PROXY_DEFAULT_DOMAIN !== '' && $this->email === '') {
+                return $this->username.'@'.REVERSE_PROXY_DEFAULT_DOMAIN;
+            }
+            return REVERSE_PROXY_DEFAULT_DOMAIN !== '' ? $this->username.'@'.REVERSE_PROXY_DEFAULT_DOMAIN : '';
+        }else{
+            return $this->email;
         }
-
-        return $this->email;
     }
 
     /**
@@ -170,9 +179,16 @@ class ReverseProxyUserProvider implements UserProviderInterface
      */
     public function getExtraAttributes()
     {
-        return array(
-            'is_ldap_user' => 1,
-            'disable_login_form' => 1,
-        );
+        if (! REVERSE_PROXY_GET_FIELDS){
+            return array(
+                'is_ldap_user' => 1,
+                'disable_login_form' => 1,
+            );
+        }else{
+            return array(
+                'is_ldap_user' => 0,
+                'disable_login_form' => 1,
+            );
+	}
     }
 }
