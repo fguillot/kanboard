@@ -55,6 +55,7 @@ class EventManager
             TaskModel::EVENT_ASSIGNEE_CHANGE   => t('Task assignee change'),
             TaskModel::EVENT_DAILY_CRONJOB     => t('Daily background job for tasks'),
             TaskModel::EVENT_MOVE_SWIMLANE     => t('Move a task to another swimlane'),
+            TaskModel::EVENT_MOVE_COL_AND_SWL  => t('Move a task to another column AND swimlane'),
             SubtaskModel::EVENT_CREATE_UPDATE  => t('Subtask creation or modification'),
         );
 

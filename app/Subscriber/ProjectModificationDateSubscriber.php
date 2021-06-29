@@ -16,6 +16,7 @@ class ProjectModificationDateSubscriber extends BaseSubscriber implements EventS
             TaskModel::EVENT_CLOSE            => 'execute',
             TaskModel::EVENT_OPEN             => 'execute',
             TaskModel::EVENT_MOVE_SWIMLANE    => 'execute',
+            TaskModel::EVENT_MOVE_COL_AND_SWL => 'execute',
             TaskModel::EVENT_MOVE_COLUMN      => 'execute',
             TaskModel::EVENT_MOVE_POSITION    => 'execute',
             TaskModel::EVENT_MOVE_PROJECT     => 'execute',

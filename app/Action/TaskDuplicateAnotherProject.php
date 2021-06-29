@@ -33,6 +33,7 @@ class TaskDuplicateAnotherProject extends Base
     {
         return array(
             TaskModel::EVENT_MOVE_COLUMN,
+            TaskModel::EVENT_MOVE_COL_AND_SWL,
             TaskModel::EVENT_CLOSE,
             TaskModel::EVENT_CREATE,
         );

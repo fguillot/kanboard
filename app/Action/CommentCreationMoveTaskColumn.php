@@ -33,6 +33,7 @@ class CommentCreationMoveTaskColumn extends Base
     {
         return array(
             TaskModel::EVENT_MOVE_COLUMN,
+            TaskModel::EVENT_MOVE_COL_AND_SWL,
         );
     }
 

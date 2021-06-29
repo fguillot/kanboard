@@ -24,6 +24,7 @@ class NotificationSubscriber extends BaseSubscriber implements EventSubscriberIn
             TaskModel::EVENT_MOVE_PROJECT      => 'handleEvent',
             TaskModel::EVENT_MOVE_POSITION     => 'handleEvent',
             TaskModel::EVENT_MOVE_SWIMLANE     => 'handleEvent',
+            TaskModel::EVENT_MOVE_COL_AND_SWL  => 'handleEvent',
             TaskModel::EVENT_ASSIGNEE_CHANGE   => 'handleEvent',
             SubtaskModel::EVENT_CREATE         => 'handleEvent',
             SubtaskModel::EVENT_UPDATE         => 'handleEvent',

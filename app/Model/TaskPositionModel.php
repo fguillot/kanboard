@@ -280,7 +280,14 @@ class TaskPositionModel extends Base
             'recurrence_trigger' => $task['recurrence_trigger'],
         );
 
-        if ($task['swimlane_id'] != $new_swimlane_id) {
+        if ($task['column_id'] != $new_column_id && $task['swimlane_id'] != $new_swimlane_id) {
+            $this->taskEventJob->execute(
+                $task['id'],
+                array(TaskModel::EVENT_MOVE_COL_AND_SWL),
+                $changes,
+                $changes
+            );
+        } elseif ($task['swimlane_id'] != $new_swimlane_id) {
             $this->taskEventJob->execute(
                 $task['id'],
                 array(TaskModel::EVENT_MOVE_SWIMLANE),

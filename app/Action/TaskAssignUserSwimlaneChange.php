@@ -34,6 +34,7 @@ class TaskAssignUserSwimlaneChange extends Base
         return array(
             TaskModel::EVENT_CREATE,
             TaskModel::EVENT_MOVE_SWIMLANE,
+            TaskModel::EVENT_MOVE_COL_AND_SWL,
         );
     }
 

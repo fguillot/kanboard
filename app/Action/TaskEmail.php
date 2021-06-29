@@ -33,6 +33,7 @@ class TaskEmail extends Base
     {
         return array(
             TaskModel::EVENT_MOVE_COLUMN,
+            TaskModel::EVENT_MOVE_COL_AND_SWL,
             TaskModel::EVENT_CLOSE,
             TaskModel::EVENT_CREATE,
         );
@@ -81,7 +82,7 @@ class TaskEmail extends Base
     {
         $user = $this->userModel->getById($this->getParam('user_id'));
         $subject = $this->getParam('subject');
-        
+
         foreach ($data["task"] as $key => $value) {
             $placeholder = sprintf('{{%s}}', $key);
             $subject = str_replace($placeholder, $value, $subject);

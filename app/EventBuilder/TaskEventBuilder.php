@@ -185,6 +185,24 @@ class TaskEventBuilder extends BaseEventBuilder
                     $eventData['task']['swimlane_name']
                 );
 
+            case TaskModel::EVENT_MOVE_COL_AND_SWL:
+                if ($eventData['task']['swimlane_id'] == 0) {
+                    return e(
+                        '%s moved the task #%d to the column "%s" in the first swimlane',
+                        $author,
+                        $eventData['task']['id'],
+                        $eventData['task']['column_title']
+                    );
+                }
+
+                return e(
+                    '%s moved the task #%d to the column "%s" in the swimlane "%s"',
+                    $author,
+                    $eventData['task']['id'],
+                    $eventData['task']['column_title'],
+                    $eventData['task']['swimlane_name']
+                );
+
             case TaskModel::EVENT_USER_MENTION:
                 return e('%s mentioned you in the task #%d', $author, $eventData['task']['id']);
             default:

@@ -625,7 +625,7 @@ return array(
     'Project activities for %s' => 'Projektaktivitäten für %s',
     'view the board on Kanboard' => 'Pinnwand in Kanboard anzeigen',
     'The task has been moved to the first swimlane' => 'Die Aufgabe wurde in die erste Swimlane verschoben',
-    'The task has been moved to another swimlane:' => 'Die Aufgaben wurde in eine andere Swimlane verschoben:',
+    'The task has been moved to another swimlane:' => 'Die Aufgabe wurde in eine andere Swimlane verschoben:',
     'New title: %s' => 'Neuer Titel: %s',
     'The task is not assigned anymore' => 'Die Aufgabe ist nicht mehr zugewiesen',
     'New assignee: %s' => 'Neue Zuordnung: %s',
@@ -1427,4 +1427,11 @@ return array(
     'XBT - Bitcoin' => 'XBT - Bitcoin',
     'You must select a file to upload as your avatar!' => 'Du musst eine Datei auswählen, die als Avatar hochgeladen werden soll!',
     'The file you uploaded is not a valid image! (Only *.gif, *.jpg, *.jpeg and *.png are allowed!)' => 'Die hochgeladene Datei ist kein gültiges Bild! (Nur *.gif, *.jpg, *.jpeg and *.png sind erlaubt!)',
+    'Move a task to another column AND swimlane' => 'Aufgabe in andere Spalte UND Swimlane verschieben',
+    '%s moved the task #%d to the column "%s" in the first swimlane' => '%s hat die Aufgabe #%d in die Spalte "%s" der ersten Swimlane verschoben',
+    '%s moved the task %s to the column "%s" in the first swimlane' => '%s hat die Aufgabe %s in die Spalte "%s" der ersten Swimlane verschoben',
+    '%s moved the task #%d to the column "%s" in the swimlane "%s"' => '%s hat die Aufgabe #%d in die Spalte "%s" in der Swimlane "%s" verschoben',
+    '%s moved the task %s to the column "%s" in the swimlane "%s"' => '%s hat die Aufgabe %s in die Spalte "%s" in der Swimlane "%s" verschoben',
+    'The task has been moved to a new column in the first swimlane' => 'Die Aufgabe wurde in eine neue Spalte in der ersten Swimlane verschoben',
+    'The task has been moved to a new column in another swimlane:' => 'Die Aufgabe wurde in eine neue Spalte in einer anderen Swimlane verschoben:'
 );

@@ -11,11 +11,12 @@ class ProjectDailySummarySubscriber extends BaseSubscriber implements EventSubsc
     public static function getSubscribedEvents()
     {
         return array(
-            TaskModel::EVENT_CREATE_UPDATE => 'execute',
-            TaskModel::EVENT_CLOSE         => 'execute',
-            TaskModel::EVENT_OPEN          => 'execute',
-            TaskModel::EVENT_MOVE_COLUMN   => 'execute',
-            TaskModel::EVENT_MOVE_SWIMLANE => 'execute',
+            TaskModel::EVENT_CREATE_UPDATE    => 'execute',
+            TaskModel::EVENT_CLOSE            => 'execute',
+            TaskModel::EVENT_OPEN             => 'execute',
+            TaskModel::EVENT_MOVE_COLUMN      => 'execute',
+            TaskModel::EVENT_MOVE_SWIMLANE    => 'execute',
+            TaskModel::EVENT_MOVE_COL_AND_SWL => 'execute',
         );
     }
 
