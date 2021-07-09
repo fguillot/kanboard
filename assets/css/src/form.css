@@ -267,3 +267,27 @@ ul.form-errors li {
 .reset-password a {
     color: var(--color-light);
 }
+
+.form-actions a{
+    font-size: 1.2em;
+    font-weight: normal;
+    cursor: pointer;  
+    display: inline-block;
+    border-radius: 2px;
+    padding: 3px 10px;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.form-actions a:link{
+    color: white;
+    background-color: red;
+    border-color: red;
+    border: 1px solid red;
+}
+.form-actions a:hover{
+    color: white;
+    background-color: #a80202;
+    border-color: #a80202;
+    border: 1px solid #a80202;
+}

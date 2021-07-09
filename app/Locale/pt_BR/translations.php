@@ -8,7 +8,7 @@ return array(
     'Remove' => 'Remover',
     'Yes' => 'Sim',
     'No' => 'Não',
-    'cancel' => 'cancelar',
+    'cancel' => 'Cancelar',
     'or' => 'ou',
     'Yellow' => 'Amarelo',
     'Blue' => 'Azul',
